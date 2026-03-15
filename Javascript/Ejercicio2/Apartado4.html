@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Editor tabla</title>
+<script src="Apartado4.js" defer></script>
+</head>
+<body>
+
+<table border="1" id="tabla">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+
+    <tbody id="cuerpo-tabla"></tbody>
+</table>
+
+<div>
+    <input id="campo-nombre" placeholder="Nombre">
+    <input id="campo-apellido" placeholder="Apellido">
+    <input id="campo-edad" type="number" placeholder="Edad">
+
+    <button id="btn-añadir-fila">Añadir fila</button>
+</div>
+
+<p id="contador">Total de filas: 0</p>
+
+</body>
+</html>

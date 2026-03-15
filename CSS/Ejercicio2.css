@@ -1,0 +1,75 @@
+/* Jerarquía tipográfica */
+article{
+    font-family: "Calibri", "Arial", sans-serif;
+}
+h1, h2, h3 {
+    font-family: "Georgia", serif;
+}
+
+/* Escalas de tamaño */
+html {
+    font-size: 16px;
+}
+.texto-px{font-size: 16px;}
+.texto-em{font-size: 1.2em;}
+.texto-rem{font-size: 1.2rem;}
+
+/* Comparación de estilos */
+.n{font-style: normal;}
+.i{font-style: italic;}
+.o{font-style: oblique;}
+
+/* Pesos y legibilidad */
+p{font-weight: 400;}
+h1{font-weight: 700;}
+.fino{font-weight: 200;}
+
+/* Decoración semántica */
+.importante{text-decoration: underline;}
+.borrado{text-decoration: line-through;}
+.resaltado{text-decoration: solid;}
+
+/* Alineación avanzada */
+.l{text-align: left;}
+.r{text-align: right;}
+.c{text-align: center;}
+.j{text-align: justify;}
+
+/* Transformaciones controladas */
+h1{text-transform: uppercase;}
+h2{text-transform: lowercase;}
+.nombre{text-transform: capitalize;}
+
+/* Altura de línea óptima */
+.texto{line-height: 1.5;}
+
+/* Estilo de listas no ordenadas */
+ul{list-style-type: disc;}
+ul ul{list-style-type: circle;}
+ul ul ul{list-style-type: square;}
+
+/* Posición del bullet */
+.dentro{list-style-position: inside;}
+.fuera{list-style-position: outside;}
+
+/* Imagen como bullet */
+ul{list-style-image: url('check.png');}
+
+/* Control de numeración */
+/* Solo con HTML */
+
+/* Enlaces y estado */
+a:link{color: blue;}
+a:visited{color: purple;}
+a:hover{color: red;}
+
+/* Modo de escritura */
+.vertical{
+    writing-mode: vertical-lr;
+    inline-size: 100%;
+    block-size: 200px;
+}
+
+/* Propiedades lógicas vs físicas */
+.fisica{width: 100px; margin-left: 10px;}
+.logica{inline-size: 100px;margin-inline-start: 10px;}

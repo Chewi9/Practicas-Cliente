@@ -1,0 +1,270 @@
+/* Flujo normal y propiedad display */
+/*1. */
+div.div-cambio { /*Se aplica a todos los div*/
+    display: inline-block;
+}
+
+span.span-cambio{
+    display: block;
+}
+
+/*2. */
+.btn-tool{
+    display: inline-block;
+
+    width: 100px;
+    padding: 20px;
+}
+
+
+/* Flotantes y clear */
+/* 3. */
+img.img-flotante{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+p.pie-imagen{
+    clear: left;
+}
+
+/* 4. */
+div.caja-f{
+    float: left;
+}
+.f1{
+    width: 100px;
+    background-color: lightblue;
+}
+.f2{
+    width: 150px;
+    background-color: lightcoral;
+}
+.f3{
+    width: 200px;
+    background-color: lightgreen;
+}
+div.caja-limpia{
+    clear: both;
+    background-color: lightgray;
+}
+
+
+/* Posicionamiento */
+/* 5. */
+p.p-relativo{
+    position: relative;
+    top: 20px;
+    left: 40px;
+}
+
+/* 6. */
+p.instruccion{
+    position: relative;
+}
+
+
+/* 7. */
+div.tarjeta-producto{
+    position: relative;
+}
+.etiqueta-oferta{
+    position: absolute;
+    top: -10px;
+    left: 100px;
+}
+
+/* 8. */
+header.cabecera-fija{
+    position: fixed;
+    background-color: blue;
+    font-size: 40px;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+body{
+    margin-top: 70px; /* Para que haya un espacio al principio y se vea el encabezado */
+}
+
+/* 9. */
+.contenedor-sticky{
+    display: flex;
+    height: 400px;
+}
+aside.indice-lateral{
+    position: sticky;
+    top: 0;
+    background: black;
+    color: white;
+    height: fit-content;
+}
+
+/* 10. */
+.capas-z {
+    position: relative;
+    height: 150px;
+    margin-top: 50px;
+}
+.capa {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+}
+.c1{
+    background-color: lightblue;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.c2{
+    background-color: lightcoral;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+.c3{
+    background-color: lightgreen;
+    top: 40px;
+    left: 40px;
+    z-index: 3;
+}
+
+
+/* Flexbox */
+/* 11. */
+.flex-container {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+/* 12. */
+nav.nav-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 13. */
+.layout-flex{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.col-lat{
+    flex: 1;
+    background-color: lightblue;
+}
+.col-main{
+    flex: 2;
+    background-color: lightgray;
+}
+
+/* 14 */
+.panel-tarjetas{
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+.card{
+    flex: 1;
+    background-color: blue;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* CSS Grid */
+/* 15. */
+.grid-basico{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(80px, auto);
+}
+
+/* 16. */
+
+
+/* 17. */
+.grid-layout-completo{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.g-header{
+    grid-column: 1 / 4;
+    background-color: lightblue;
+}
+.g-sidebar{
+    grid-column: 1 / 2;
+    background-color: lightcoral;
+}
+.g-content{
+    grid-column: 2 / 4;
+    background-color: lightgreen;
+}
+.g-footer{
+    grid-column: 1 / 4;
+    background-color: lightgray;
+}
+
+/* 18. */
+.galeria-auto{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: minmax(150px, auto);
+}
+
+
+/* Diseño adaptativo y media queries */
+/* 19. */
+
+/* Móvil */
+.layout-responsive {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+}
+.caja-r {
+    background-color: #fce4ec;
+    border: 2px solid #ad1457;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Tablet */
+@media screen and (min-width: 600px) {
+    .layout-responsive {
+        flex-direction: row; 
+        flex-wrap: wrap;
+    }
+    .caja-r {
+        flex: 1 1 45%; 
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 900px) {
+    .caja-r {
+        flex: 1;
+        background-color: #e8f5e9;
+        border-color: #2e7d32;
+    }
+}
+
+/* 20. */
+.titulo-adaptativo{
+    font-size: calc(1.5rem + 3vw);
+    text-align: center;
+}
+@media screen and (min-width: 600px) {
+    .titulo-adaptativo{
+        font-size: 4rem;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica CSS - UMA</title>
+    <link rel="stylesheet" href="Ejercicio3.css">
+</head>
+<body>
+
+    <section id="colores">
+        <h2>1. Valores y Colores</h2>
+        <p class="c-nombre">Color por nombre</p>
+        <p class="c-hex6">Color hexadecimal (6 dígitos)</p>
+        <p class="c-hex3">Color hexadecimal (abreviado)</p>
+        <p class="c-rgb">Color RGB</p>
+
+        <div class="azul-transparente">Fondo azul semitransparente (rgba)</div>
+        <div class="azul-solido">Fondo azul sólido</div>
+
+        <p class="u-px">Texto en px</p>
+        <p class="u-em">Texto en em</p>
+        <p class="u-pt">Texto en pt</p>
+        <p class="u-cm">Texto en cm</p>
+    </section>
+
+    <section id="fondos">
+        <h2>2. Fondos y Bordes</h2>
+        <div class="f-repeat">Div para repetir imagen en X</div>
+        <div class="f-posicion">Div para posicionar imagen de fondo</div>
+        
+        <div class="b-solido">Borde sólido</div>
+        <div class="b-discontinuo">Borde dashed</div>
+        <div class="b-puntos">Borde dotted</div>
+        <div class="b-doble">Borde double</div>
+
+        <div class="tarjeta">Tarjeta para bordes redondeados</div>
+    </section>
+
+    <section id="overflow">
+        <h2>3. Tamaño y Desbordamiento</h2>
+        <div class="caja-overflow">
+            Aquí debes meter mucho texto para que desborde la caja cuando le des un width y height fijos en el CSS. 
+            Prueba a copiar este texto varias veces.
+        </div>
+
+        <div class="contenedor-imagenes">
+            <p>Imagen con width: 100%</p>
+            <img src="https://via.placeholder.com/500x100" class="img-w">
+            
+            <p>Imagen con max-width: 100%</p>
+            <img src="https://via.placeholder.com/500x100" class="img-mw">
+        </div>
+
+        <div class="caja-min-height">Caja con min-height (prueba a meter más texto luego) </div>
+        <div class="caja-viewport">Caja con unidades de Viewport (vw/vh)</div>
+    </section>
+
+    <section id="box-model">
+        <h2>4. Modelo de Cajas</h2>
+        <div class="caja-content">Content-box</div>
+        <div class="caja-border">Border-box</div>
+
+        <div class="caja-colapso-1">Elemento 1 (Márgenes)</div>
+        <div class="caja-colapso-2">Elemento 2 (Márgenes)</div>
+
+        <div class="caja-lados">Caja para margin/padding por cada lado</div>
+        <div class="caja-espacios">Diferencia entre Margin y Padding</div>
+    </section>
+
+    <section id="display">
+        <h2>5. Display y Posicionamiento</h2>
+        <span class="s1">Span 1</span>
+        <span class="s2">Span 2</span>
+        <span class="s3">Span 3</span>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </nav>
+
+        <div class="padre-relativo">
+            <div class="hijo-absoluto">Caja absoluta dentro de relativa</div>
+        </div>
+
+        <header class="cabecera-fija">Este será el encabezado fijo</header>
+    </section>
+
+    <section id="funciones">
+        <h2>6. Funciones y !important</h2>
+        <div class="caja-calc">Ancho calculado con calc()</div>
+        <p class="texto-importante" style="color: green;">Texto con estilo en línea (prueba !important)</p>
+    </section>
+
+</body>
+</html>

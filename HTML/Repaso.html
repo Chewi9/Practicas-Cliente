@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hobby</title>
+        <link href="repaso.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <h1>Hobby</h1>
+        <p>
+            Mi hobby es jugar videojuegos, me gusta mucho jugar juegos de <strong>rol</strong> y <strong>aventuras</strong>. 
+            Me gusta jugar con mis amigos y compartir experiencias en línea. 
+            También me gusta coleccionar juegos y consolas antiguas, 
+            es una forma de recordar los buenos momentos que he tenido jugando a lo largo de los años.
+        </p>
+        <ul>
+            <li>Juegos de rol</li>
+            <li>Juegos de aventuras</li>
+            <li>Consolas antiguas</li>
+        </ul>
+
+        <img src="https://th.bing.com/th/id/R.d305d737c83ebc4bd40f695d4c9a4f1c?rik=Q6%2brF%2by3BHBrag&riu=http%3a%2f%2fwp.appadvice.com%2fwp-content%2fuploads%2f2010%2f06%2fSNES.jpg&ehk=WeOlx3vuCBqm5GJS50sZvp7QK8HEzw1AU4z1KK0vfKo%3d&risl=&pid=ImgRaw&r=0" alt="Foto de consola" width="250">
+
+        <h2>Enlaces de interés</h2>
+        <a href="https://wikipedia.org/wiki/videojuego" target="_blank" id="leer" name="leer">Leer más sobre videojuegos</a>
+
+
+        <h2>Contáctame</h2>
+        <form action="/enviar" method="post">
+            <fieldset>
+                <legend>Información personal</legend>
+                <label for="Nombre">Nombre:</label>
+                <input type="text" id="Nombre" name="Nombre"><br>
+                
+                <label for="Email">Email:</label>
+                <input type="email" id="Email" name="Email"><br><br>
+
+                <label for="Dinero">Dona dinero a la causa:</label>
+                <input type="number" id="Dinero" name="Dinero" required step="0.01" min="0"><br><br>
+            </fieldset>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+
+</html>

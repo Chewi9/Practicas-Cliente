@@ -1,0 +1,279 @@
+/* Valores y colores */
+ /* 1. */
+ .c-nombre{
+    color:red;
+ } 
+ .c-hex6{
+    color: #ff0000;
+ }
+ .c-hex3{
+    color: #f00;
+ }
+ .c-rgb{
+    color: rgb(255, 0, 0);
+ }
+
+/* 2. */
+.azul-transparente{
+    background-color: rgba(0, 0, 255, 0.5);
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.azul-solido{
+    background-color: rgb(0, 0, 255);
+    padding: 10px;
+    color: white;
+}
+
+/* 3. */
+.u-px{
+    font-size: 16px;
+}
+.u-em{
+    font-size: 1.5em;
+}
+
+.u-pt{
+    font-size: 12pt;
+}
+
+.u-cm{
+    font-size: 1cm;
+}
+
+
+/* Fondos y bordes */
+/* 4. */
+.f-repeat{
+    height: 100px;
+    border: 1px solid #000;
+    background-image: url('https://tse2.mm.bing.net/th/id/OIP.xmr9NaG5fmMmf7S9lagG8wHaD5?rs=1&pid=ImgDetMain&o=7&rm=3');
+    background-repeat: repeat-x;
+    color: white;
+}
+
+/* 5. */
+.f-posicion{
+    height: 150px;
+    width: 150px;
+    border: 1px solid #000;
+    margin-top: 10px;
+    background-image: url('https://i.pinimg.com/170x/0f/a9/7b/0fa97b4f1c7378cbe858888713bf6f9a.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+/* 6. */
+.b-solido{
+    border: 5px solid #1a237e;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.b-discontinuo{
+    border: 5px dashed #1a237e;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.b-puntos{
+    border: 5px dotted #1a237e;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.b-doble{
+    border: 5px double #1a237e;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* 7. */
+.tarjeta{
+    border-radius: 20px;
+    border: 5px solid #1a237e;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+/* Tamaño y desbordamiento */
+/* 8. */
+.caja-overflow{
+    width: 200px;
+    height: 100px;
+    border: 2px solid #333;
+    overflow: auto;
+}
+
+/* 9. */
+.contenedor-imagenes{
+    width: 300px;
+    border: 2px solid #333;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* 10. */
+.caja-min-height{ /* Aumenta la caja pero teniendo un tamaño mínimo */
+    min-height: 100px;
+    border: 2px solid #333;
+    padding: 10px;
+}
+
+/* 11. */
+.caja-viewport{
+    width: 50vw;
+    height: 30vh;
+    background-color: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+/* Modelo de cajas */
+/* 12. */
+.caja-content{
+    width: 200px;
+    height: 100px;
+    border: 5px solid #1a237e;
+    box-sizing: content-box;
+}
+
+.caja-border{
+    width: 200px;
+    height: 100px;
+    border: 5px solid #1a237e;
+    box-sizing: border-box;
+}
+
+/* 13. */
+.caja-colapso-1{
+    margin-bottom: 30px;
+    background-color: #1a237e;
+    padding: 10px;
+    color: white;
+}
+
+.caja-colapso-2{
+    margin-top: 10px;
+    background-color: #1a237e;
+    padding: 10px;
+    color: white;
+}
+
+/* 14. */
+.caja-lados{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 50px;
+
+    padding-top: 40px;
+    padding-left: 0;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    
+    background-color: #1a237e;
+}
+
+/* 15. */
+.caja-espacios{
+    border: 5px solid #1a237e;
+    margin: 50px;
+    padding: 30px;
+    background-color: #ff0000;
+}
+/* Padding, espacio entre texto y borde de caja, Margin aire entre caja y resto de página */
+
+
+/* Display y posicionamiento */
+/* 16. */
+.s1, .s2, .s3{
+    background-color: #1a237e;
+    border: 1px solid #000;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* 17. */
+.menu ul{
+    list-style: none;
+    padding: 0;
+    background-color: #1a237e;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu a{
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #333;
+}
+
+/* 18. */
+.padre-relativo{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border: 2px solid #333;
+    background-color: #f5f5f5;
+    margin-top: 50px;
+}
+
+.hijo-absoluto{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 50px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* 19. */
+.cabecera-fija{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a237e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    z-index: 1000;
+}
+
+
+/* Funciones */
+/* 20. */
+.caja-calc{
+    width: calc(100% - 40px);
+    margin-top: calc(50vw - 45vw);
+    background-color: #1a237e;
+    padding: 10px;
+    border: 2px solid #333;
+}
+
+.texto-importante{
+    color: red !important;
+    font-weight: bold !important;
+    font-size: 1.2rem;
+}

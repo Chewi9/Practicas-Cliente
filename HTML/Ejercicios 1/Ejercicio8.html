@@ -1,0 +1,72 @@
+<!-- Cree un sitio web con una estructura dada por elementos semánticos de estructura (header, footer, nav, main, aside). 
+ La cabecera se referirá a que es un sitio web con explicación de los elementos de varios lenguajes relacionados con el desarrollo web. 
+ En el pie de página se explicará el nombre de los autores y el contexto de la página (asignatura, titulación, universidad, año, …). 
+ En la sección de navegación se incluirán otras páginas dentro del mismo sitio dedicadas a otros lenguajes (CSS, JavaScript, TypeScript, …) pero sin enlaces reales. 
+ En la sección aside se incluirán otras páginas externas con información sobre esos mismos lenguajes y HTML, pero sin enlaces. En la sección main se incluirá el contenido del documento HTML desarrollado en el último ejercicio, usando los elementos section y article.-->
+ 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="JMAP">
+        <title>Ejercicio 1 HTML</title>
+    </head>
+    <body>
+        <header>
+            <h1>Guía de Lenguajes de Desarrollo</h1>
+            <p>
+                Explicación detallada de los elementos y lenguajes clave para la creación de sitios modernos
+            </p>
+        </header>
+
+        <nav>
+            <ul>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>PHP</li>
+            </ul>
+        </nav>
+
+        <main>
+            <article>
+                <header>
+                    <h2>Historia y Características de <abbr title="HyperText Markup Language">HTML</abbr></h2>
+                </header>
+
+                <section>
+                    <h3>Historia</h3>
+                    <p>
+                        El <abbr title="HyperText Markup Language">HTML</abbr> fue creado por <i>Tim Berners-Lee</i>. Como él mismo dijo: <q>La Web no es solo una tecnología, es un recurso social</q>.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Características Principales de <abbr title="HyperText Markup Language">HTML</abbr></h3>
+                    <dl>
+                        <dt>Semántica</dt>
+                        <dd>Uso de etiquetas que describen el significado del contenido.</dd>
+                        <dt>Multimedia</dt>
+                        <dd>Capacidad nativa para audio y vídeo.</dd>
+                    </dl>
+                </section>
+            </article>
+        </main>
+
+        <aside>
+            <h3>Recursos Externos</h3>
+            <ul>
+                <li>Documentación de MDN sobre <abbr title="HyperText Markup Language">HTML</abbr></li>
+                <li>W3C - Estándares Web</li>
+                <li>Tutoriales de CSS</li>
+                <li>Aprende JavaScript</li>
+            </ul>
+        </aside>
+
+        <footer>
+            <p>Autor: JMAP</p>
+            <p>Asignatura: Tecnologías Web | Titulación: Ingeniería informática | Universidad: Universidad de Málaga | Año: 2026</p>
+        </footer>
+
+    </body>
+</html>

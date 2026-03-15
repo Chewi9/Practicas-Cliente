@@ -1,0 +1,116 @@
+p {
+    font-size: 0.95rem;
+}
+
+/*Elementos con clase .destacado*/
+.destacado {
+    background: #fff3cd;
+    border-left: 4px solid #f0ad4e;
+}
+
+/*Elementos titular*/
+#titular {
+    color: #1a237e;
+    font-size: 2rem;
+}
+
+/*Atributo data-nuevo*/
+[data-nuevo]{
+    background: #d4edda;
+}
+
+/* Atributo que contenga una cadena (selector de subcadena *) */
+a[href*="wikipedia"]{
+    color: #006400;
+    border-bottom: 1px dashed green;
+}
+
+/* Atributo que termine en una cadena (selector $) */
+a[href$=".pdf"]{
+    color: #b71c1c;
+}
+
+/* Pseudoclases y Pseudoelementos */
+
+/*Primer elemento de cualquier lista */
+li:first-child{
+    font-weight: bold;
+}
+
+/* Ultimo elemento de cualquier lista */
+li:last-child{
+    color: #777;
+    font-style: italic;
+}
+
+/* Filas pares de la tabla */
+tr:nth-child(even){
+    background: #e3f2fd;
+}
+
+/* No clase destacado */
+p:not(.destacado){
+    border-left: 3px solid #ccc;
+    padding-left: 0.6rem;
+}
+
+/* Primera linea del parrafo con clase intro-texto */
+.intro-texto::first-line{
+    font-weight: bold;
+    color: #1a237e;
+}
+
+/* Primera letra parrafo con clase capitular */
+.capitular::first-letter{
+    font-size: 3em;
+    float: left;
+    line-height: 0.8;
+    margin-left: 4px;
+}
+
+/* Pasar el ratón */
+td:hover{
+    background: #fff9c4;
+}
+
+
+/* Combinadores */
+
+/* em dentro de cita */
+.cita em{
+    color: #6a1b9a;
+    font-style: normal;
+}
+
+/* Hijos de lista-compacta */
+.lista-compacta >li {
+    list-style-type: "> ";
+}
+
+/* p despues de h2 */
+h2 + p{
+    color: #555 ;
+    font-style: italic;
+}
+
+/* p hermanos posteriores h3 */
+h3 ~ p{
+    padding-left: 1rem;
+}
+
+/* Clases etiqueta y urgente */
+.etiqueta.urgente {
+    background: #f44336;
+    color: white;
+}
+
+/* h2 y h3 fuentes */
+h2,h3 {
+    font-family: Georgia, serif;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Hijos directos tarjeta */
+.tarjeta > * {
+    margin-bottom: 0.5rem;
+}

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Formulario de opinión</title>
+    <link href="style.css" rel="stylesheet" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    ¡Estamos encantados de oír tu opinión!
+
+    Te damos las gracias por visitar nuestra casa rural y nos encantaría oír tu opinión 
+    sobre ella. Por favor, rellena las siguientes secciones. No es necesario que nos 
+    proporciones tu nombre o datos de contacto, pero si lo haces, entrarás en un 
+    sorteo donde tendrás la oportunidad de ganar divertidos premios.
+
+    --
+
+    <form action="#" method="post">
+    <fieldset class="form-section">
+      <legend><h2>Instalaciones</h2></legend>
+
+        <fieldset>
+          <legend>¿Qué te pareció la habitación?</legend>
+          <input type="radio" id="hab-peq" name="habitacion" value="pequena">
+          <label for="hab-peq">Demasiado pequeña</label>
+
+          <br><input type="radio" id="hab-gran" name="habitacion" value="grande">
+          <label for="hab-gran">Demasiado grande</label>
+
+          <br><input type="radio" id="hab-justo" name="habitacion" value="justo">
+          <label for="hab-justo">Justo lo que esperaba</label>
+        </fieldset>
+      
+        <fieldset>
+          <legend>¿Qué te pareció la cama?</legend>
+          <br><input type="radio" id="cama-dura" name="cama" value="dura">
+          <label for="cama-dura">Demasiado dura</label>
+
+          <br><input type="radio" id="cama-blanda" name="cama" value="blanda">
+          <label for="cama-blanda">Demasiado blanda</label>
+
+          <br><input type="radio" id="cama-justa" name="cama" value="justa">
+          <label for="cama-justa">Justo lo que esperaba</label>
+        </fieldset>
+    
+        <fieldset>
+          <legend>Describe las instalaciones en general (puedes elegir varias opciones)</legend>
+          <input type="checkbox" name="instalaciones" value="comoda"> Cómodas<br>
+          <input type="checkbox" name="instalaciones" value="lujosas"> Lujosas <br>        
+          <input type="checkbox" name="instalaciones" value="alta"> De alta tecnología <br>
+          <input type="checkbox" name="instalaciones" value="coquetas"> Coquetas <br>
+          <input type="checkbox" name="instalaciones" value="majestuosas"> Majestuosas <br>
+        </fieldset>
+    </fieldset>
+
+
+
+    <fieldset class="form-section">
+      <legend><h2>Sobre los anfitriones</h2></legend>
+
+        <legend>¿Cuál es tu empleado favorito?</legend>
+        <select id="empleado" name="empleado">
+          <option value="mayordomo">El mayordomo</option>
+          <option value="cocinera">La cocinera</option>
+          <option value="ama-llaves">La ama de llaves</option>
+          <option value="jardinero">El jardinero</option>
+        </select>
+
+        <legend>¿Qué saludo preferías?</legend>
+        <select id="saludo" name="saludo">
+          <option value="reverencia">Reverencia</option>
+          <option value="abrazo">Abrazo</option>
+          <option value="chocar-cinco">Chocar los cinco</option>
+          <option value="saludo-militar">Saludo militar</option>
+        </select>
+    </fieldset>
+
+
+
+    <fieldset class="form-section">
+      <legend><h2>¿Alguna sugerencia adicional?</h2></legend>
+        <label for="comentarios">Danos tus comentarios</label>
+        <br />
+        <textarea id="comentarios" name="comentarios" cols="40" rows="5"></textarea>
+    </fieldset>
+
+
+
+    <fieldset class="form-section">
+      <legend><h2>Tus detalles</h2></legend>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" /> <br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="email" name="correo"/> <br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="tel" name="telefono" /> <br>
+    </fieldset>
+
+
+
+    <fieldset class="form-section">
+        <button type="submit">Enviar</button>
+    </fieldset>
+
+  </form>
+  </body>
+</html>

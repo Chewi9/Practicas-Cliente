@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Formulario de registro</title>
+    <link href="style.css" rel="stylesheet" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <form action="#" method="post">
+        <fieldset class="form-section">
+            <legend><h2>Datos personales</h2></legend>
+
+            <label>Nombre completo:</label>
+            <input type="text" required minlength="3"><br>
+
+            <label>Correo electrónico:</label>
+            <input type="email" placeholder="ejemplo@gmail.com"><br>
+
+            <label>Teléfono:</label>
+            <input type="tel" pattern="[0-9]{9}" required><br>
+
+            <label>Perfil académico (URL):</label>
+            <input type="url" placeholder="https://perfil.edu"><br>
+
+            <label for="investigación">Campo de investigación:</label>
+            <input type="search">
+            <datalist>
+                <option value="Inteligencia Artificial"></option>
+                <option value="Biotecnología"></option>
+                <option value="Energías Renovables"></option>
+                <option value="Ciencias sociales"></option>
+                <option value="Física cuántica"></option>
+            </datalist>
+        </fieldset>
+
+        <fieldset class="form-section">
+            <legend><h2>Información académica</h2></legend>
+
+            <label>Años de experiencia en investigación:</label>
+            <input type="number" min="0" max="50"><br>
+
+            <label>Nivel de conocimiento en el tema:</label>
+            <input type="range" min="1" max="10" step="1" value="5"><br>
+
+            <label>Universidad de procedencia:</label>
+            <select required>
+                <option value="" selected disabled>Seleccione una Universidad...</option>
+                <option>Universidad Madrid</option>
+                <option>Universidad Málaga</option>
+                <option>Universidad Sevilla</option>
+            </select>
+        </fieldset>
+
+
+        <fieldset class="form-section">
+            <legend><h2>Preferencias de asistencia</h2></legend>
+            <fieldset>
+                <label>Talleres de interés:</label><br>
+                <input type="checkbox" value="ia">IA aplicada<br>
+                <input type="checkbox" value="metodologias">Metodologías de investigación<br>
+                <input type="checkbox" value="escritura">Escritura Académica<br>
+                <input type="checkbox" value="etica">Ética en la ciencia<br>
+            </fieldset>
+        
+            <fieldset>
+                <label>Modalidad de asistencia:</label><br>
+                <input type="radio">Presencial
+                <input type="radio">Virtual
+                <input type="radio">Híbrida
+            </fieldset>
+
+            <label>Color preferido para credencial:</label><br>
+            <input type="color" value="#0000ff">
+        </fieldset>
+
+
+        <fieldset class="form-section">
+            <legend><h2>Logística</h2></legend>
+
+            <label>Fecha y hora de llegada:</label>
+            <input type="datetime-local"><br>
+
+            <label>Hora preferida para sesiones individuales:</label>
+            <input type="time"><br>
+
+            <label>Subir CV académico (pdf):</label>
+            <input type="file" accept=".pdf"><br>
+
+            <label>Mes de disponibilidad:</label>
+            <input type="month"><br>
+        </fieldset>
+
+        <fieldset>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reiniciar">
+        </fieldset>
+    </form>
+  </body>
+</html>

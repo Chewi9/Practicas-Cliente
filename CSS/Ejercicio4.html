@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios de Disposición CSS - UMA</title>
+    <link rel="stylesheet" href="Ejercicio4.css">
+</head>
+<body>
+
+    <header class="cabecera-fija">
+        ENCABEZADO FIJO (position: fixed)
+    </header>
+
+    <section id="ejercicio-1">
+        <h2>1. Flujo normal y propiedad display</h2>
+        <p class="instruccion">Intercambio de modos: Convierte div en inline y span en block.</p>
+        <div class="div-cambio">Div 1</div>
+        <div class="div-cambio">Div 2</div>
+        <div class="div-cambio">Div 3</div>
+        <div class="div-cambio">Div 4</div>
+        <div class="div-cambio">Div 5</div>
+
+        <span class="span-cambio">Span 1</span>
+        <span class="span-cambio">Span 2</span>
+        <span class="span-cambio">Span 3</span>
+        <span class="span-cambio">Span 4</span>
+        <span class="span-cambio">Span 5</span>
+
+        <p class="instruccion">Barra de botones con inline-block:</p>
+        <nav class="barra-botones">
+            <a href="#" class="btn-tool">Botón 1</a>
+            <a href="#" class="btn-tool">Botón 2</a>
+            <a href="#" class="btn-tool">Botón 3</a>
+        </nav>
+    </section>
+
+    <section id="ejercicio-2">
+        <h2>2. Flotantes y clear</h2>
+        <div class="articulo">
+            <img src="https://brobible.com/wp-content/uploads/2023/03/funny-procrastination-memes.jpg?resize=800" class="img-flotante" alt="Flotante">
+            <p>Este es un texto largo que debería rodear a la imagen. Copia este texto varias veces para ver el efecto de envoltura del float: left. El pie de imagen de abajo debe usar clear para no quedarse al lado. Este es un texto largo que debería rodear a la imagen. Este es un texto largo que debería rodear a la imagen. Este es un texto largo que debería rodear a la imagen. Este es un texto largo que debería rodear a la imagen. Este es un texto largo que debería rodear a la imagen. Este es un texto largo que debería rodear a la imagen. Este es un texto largo que debería rodear a la imagen. Este es un texto largo que debería rodear a la imagen. Este es un texto largo que debería rodear a la imagen. Este es un texto largo que debería rodear a la imagen. Este es un texto largo que debería rodear a la imagen.  </p>
+            <p class="pie-imagen">Este es el pie de imagen (clear: left).</p>
+        </div>
+
+        <p class="instruccion">Efecto clear con múltiples cajas:</p>
+        <div class="contenedor-float">
+            <div class="caja-f f1">Caja 1</div>
+            <div class="caja-f f2">Caja 2</div>
+            <div class="caja-f f3">Caja 3</div>
+            <div class="caja-limpia">Este elemento usa clear.</div>
+        </div>
+    </section>
+
+    <section id="ejercicio-3">
+        <h2>3. Posicionamiento</h2>
+        <p>Párrafo 1 (Estático)</p>
+        <p>Párrafo 2 (Estático)</p>
+        <p class="p-relativo">Párrafo 3 (Relativo: muéveme 20px top y 40px left)</p>
+        <p>Párrafo 4 (Estático)</p>
+        <p>Párrafo 5 (Estático)</p>
+
+        <p class="instruccion">Contexto absoluto (Tarjeta con etiqueta oferta):</p>
+        <div class="tarjeta-producto">
+            <div class="etiqueta-oferta">OFERTA</div>
+            <h3>Producto Pro</h3>
+            <p>Descripción del producto.</p>
+        </div>
+
+        <p class="instruccion">Índice pegajoso (Sticky):</p>
+        <div class="contenedor-sticky">
+            <aside class="indice-lateral">
+                <ul><li>Sección 1</li><li>Sección 2</li></ul>
+            </aside>
+            <main>Texto largo para hacer scroll dentro de este contenedor...</main>
+        </div>
+
+        <p class="instruccion">Z-index (Solapamiento):</p>
+        <div class="capas-z">
+            <div class="capa c1">Z-1</div>
+            <div class="capa c2">Z-2</div>
+            <div class="capa c3">Z-3</div>
+        </div>
+    </section>
+
+    <section id="ejercicio-4">
+        <h2>4. Flexbox</h2>
+        <div class="flex-container">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+            <div class="flex-item">4</div>
+            <div class="flex-item">5</div>
+            <div class="flex-item">6</div>
+        </div>
+
+        <nav class="nav-flex">
+            <a href="#" class="nav-item">Inicio</a>
+            <a href="#" class="nav-item">Servicios</a>
+            <a href="#" class="nav-item">Contacto</a>
+        </nav>
+
+        <p class="instruccion">Layout 3 columnas (1-2-1):</p>
+        <div class="layout-flex">
+            <aside class="col-lat">Lateral</aside>
+            <main class="col-main">Principal (Doble)</main>
+            <aside class="col-lat">Lateral</aside>
+        </div>
+
+        <p class="instruccion">Tarjetas de igual altura:</p>
+        <div class="panel-tarjetas">
+            <div class="card">Contenido corto.</div>
+            <div class="card">Contenido mucho más largo para forzar la altura de todas las demás.</div>
+            <div class="card">Contenido medio.</div>
+        </div>
+    </section>
+
+    <section id="ejercicio-5">
+        <h2>5. CSS Grid</h2>
+        <div class="grid-basico">
+            <div class="box">1</div><div class="box">2</div><div class="box">3</div>
+            <div class="box">4</div><div class="box">5</div><div class="box">6</div>
+        </div>
+
+        <div class="grid3x3">
+            <div class="box">A</div><div class="box">B</div><div class="box">C</div>
+            
+        </div>
+
+        <p class="instruccion">Maquetación completa (Grid Areas/Lines):</p>
+        <div class="grid-layout-completo">
+            <header class="g-header">Header</header>
+            <aside class="g-sidebar">Sidebar</aside>
+            <main class="g-content">Main Content</main>
+            <footer class="g-footer">Footer</footer>
+        </div>
+
+        <p class="instruccion">Galería Adaptativa (auto-fit):</p>
+        <div class="galeria-auto">
+            <div class="box">Img 1</div><div class="box">Img 2</div>
+            <div class="box">Img 3</div><div class="box">Img 4</div>
+        </div>
+    </section>
+
+    <section id="ejercicio-6">
+        <h2>6. Diseño Adaptativo</h2>        
+        <div class="layout-responsive">
+            <div class="caja-r">Caja A</div>
+            <div class="caja-r">Caja B</div>
+            <div class="caja-r">Caja C</div>
+        </div>
+        
+        
+        <h1 class="titulo-adaptativo">Titular fluido (vw + calc)</h1>
+    </section>
+
+</body>
+</html>
