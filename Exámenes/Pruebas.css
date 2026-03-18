@@ -1,0 +1,30 @@
+body{
+    background-color: gray;
+    font-size: 17px;
+    font-family: monospace;
+}
+table{
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-bottom: 70px;
+}
+
+th{
+    border: 2px solid black;
+    background-color: white;
+    padding: 10px;
+}
+
+tbody tr td{
+    border: 2px solid black;
+    background-color: rgba(159, 132, 132, 0.7);
+    padding: 10px;
+}
+
+tfoot tr td{
+    border: 2px solid black;
+    background-color: white;
+    padding: 10px;
+}
+
+
