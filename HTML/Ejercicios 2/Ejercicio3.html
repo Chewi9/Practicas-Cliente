@@ -41,7 +41,20 @@
             <input type="number" min="0" max="50"><br>
 
             <label>Nivel de conocimiento en el tema:</label>
-            <input type="range" min="1" max="10" step="1" value="5"><br>
+            <input type="range" min="1" max="10" step="1" value="5" list="numeros"><br>
+            <datalist id="numeros">
+                <option value="1" label="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5" label="5"></option>
+                <option value="6"></option>
+                <option value="7"></option>
+                <option value="8"></option>
+                <option value="9"></option>
+                <option value="10" label="10"></option>
+            </datalist>
+            <br>
 
             <label>Universidad de procedencia:</label>
             <select required>
@@ -89,6 +102,9 @@
 
             <label>Mes de disponibilidad:</label>
             <input type="month"><br>
+
+            <label>Año de graduación:</label>
+            <input type="number" min="1900" max="2023">
         </fieldset>
 
         <fieldset>
