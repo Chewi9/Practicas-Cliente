@@ -198,19 +198,23 @@ nav.nav-flex{
     grid-template-columns: 1fr 2fr 1fr;
 }
 .g-header{
-    grid-column: 1 / 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
     background-color: lightblue;
 }
 .g-sidebar{
-    grid-column: 1 / 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
     background-color: lightcoral;
 }
 .g-content{
-    grid-column: 2 / 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
     background-color: lightgreen;
 }
 .g-footer{
-    grid-column: 1 / 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
     background-color: lightgray;
 }
 
