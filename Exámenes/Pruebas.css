@@ -15,7 +15,7 @@ th{
     padding: 10px;
 }
 
-tbody tr td{
+td{
     border: 2px solid black;
     background-color: rgba(159, 132, 132, 0.7);
     padding: 10px;
