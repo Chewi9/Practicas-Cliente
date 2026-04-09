@@ -1,12 +1,6 @@
 function Formulario() {
-  const onClick = () => {
-    console.log('Input clickeado')
-  }
-
-  const onSubmit = (e) => {
-    e.preventDefault()
-    console.log('Formulario enviado')
-  }
+  function onClick() {}
+  function onSubmit() {}
 
   return (
     <form onSubmit={onSubmit}>

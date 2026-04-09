@@ -4,8 +4,8 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import TablaDeContenidos from './TablaDeContenido'
-import BarraLateral from './BarraLateral'
 import Formulario from './Formulario'
+import BarraLateral from './BarraLateral'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -33,6 +33,8 @@ function App() {
           Count is {count}
         </button>
       </section>
+
+      <BarraLateral />
 
       <div className="ticks"></div>
 
@@ -120,7 +122,7 @@ function App() {
       <div className="ticks"></div>
       <section id="spacer"></section>
 
-    <Formulario />
+    
     </>
   )
 }
