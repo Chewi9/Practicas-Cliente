@@ -1,0 +1,7 @@
+[
+    { "id": 1, "nombre": "Portátil Gaming", "precio": 1200, "stock": 5, "categoria": "Informática" },
+    { "id": 2, "nombre": "Ratón Inalámbrico", "precio": 25, "stock": 50, "categoria": "Periféricos" },
+    { "id": 3, "nombre": "Monitor 4K", "precio": 350, "stock": 12, "categoria": "Informática" },
+    { "id": 4, "nombre": "Teclado Mecánico", "precio": 80, "stock": 20, "categoria": "Periféricos" },
+    { "id": 5, "nombre": "Auriculares Bluetooth", "precio": 60, "stock": 15, "categoria": "Audio" }
+]

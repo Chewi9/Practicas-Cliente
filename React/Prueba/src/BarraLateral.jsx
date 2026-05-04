@@ -11,9 +11,9 @@ function BarraLateral() {
 
   if (sesionIniciada()) {
     return <Bienvenido />
+  } else{
+    return <Formulario />
   }
-
-  return <Formulario />
 }
 
 export default BarraLateral

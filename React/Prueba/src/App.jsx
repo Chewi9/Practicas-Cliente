@@ -4,8 +4,8 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import TablaDeContenidos from './TablaDeContenido'
-import Formulario from './Formulario'
 import BarraLateral from './BarraLateral'
+import GaleriaDePerfiles from './GaleriaDePerfiles'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +14,7 @@ function App() {
   return (
     <>
       <TablaDeContenidos />
+      <GaleriaDePerfiles />
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
